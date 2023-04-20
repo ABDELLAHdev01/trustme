@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="Capture d’écran 2023-01-31 120234.png">
+    
+    <title>TRUSTME</title>
+</head>
+<style>
+    .center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+
+}
+</style>
+<body class="bg-dark">
+    
+    
+        <div class="center">
+            <button class="btn btn-primary " id="play">TRUST ME</button>
+            
+        </div>
+        <div class="center drisspic" style="display: none;">
+        <img class="img-fluid " src="/src/Capture d’écran 2023-01-31 114254.png" alt="" srcset="">            
+        </div>
+<!-- ajoute audio hidden and toggle it by a button -->
+        <audio id="audio" src="/src/Rick Astley - Never Gonna Give You Up (Official Music Video).mp4" ></audio>
+        <!-- <button id="play" class="btn btn-primary">Play</button> -->
+       
+        <script>
+            const audio = document.getElementById('audio');
+            const play = document.getElementById('play');
+             let pic = document.querySelector('.drisspic');
+                             pic.style.display = "none";
+
+         
+
+            play.addEventListener('click', () => {
+                audio.play();
+                 pic.style.display = "block";
+
+            });
+          
+        </script>
+        
+
+</body>
+</html>
